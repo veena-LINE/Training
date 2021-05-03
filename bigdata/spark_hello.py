@@ -3,9 +3,9 @@ from pyspark import SparkContext
 
 # Create SparkContext
 # local -> standalone, spark driver and executor in the same JVM process
-sc = SparkContext("local", "sc_hello")  # --> indicates Spark to iuse just 1 core (by default)
-# sc = SparkContext("local[2]", "sc_hello")  # --> indicates Spark to use 2 cores
-# sc = SparkContext("local[*]", "sc_hello")  # --> indicates Spark to use all CPU cores
+sc = SparkContext("local", "sc_hello")  # --> dicatates Spark to use just 1 core (by default), app_name=sc_hello
+# sc = SparkContext("local[2]", "sc_hello")  # --> dicatates Spark to use 2 cores
+# sc = SparkContext("local[*]", "sc_hello")  # --> dicatates Spark to use all CPU cores
 
 sc.setLogLevel("WARN")  # Log only WARNing and ERRORs
 
@@ -15,11 +15,10 @@ data_rdd = sc.parallelize(data)
 print("-----------------------------------------------------------")
 print("Max", data_rdd.max())
 
-
 print("****INFO**** PARTITIONS = ", data_rdd.getNumPartitions())
 print("-----------------------------------------------------------")
 
 
 
 # How to run?
-# $spark-submit spark_hellp.py
+# $spark-submit spark_hello.py
