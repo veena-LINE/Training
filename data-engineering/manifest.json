@@ -1,0 +1,21 @@
+
+{
+    "fileLocations": [
+        {
+            "URIs": [
+                "s3://gk-aws-workshop/ecommerce/data.csv"
+            ]
+        },
+        {
+            "URIPrefixes": [
+            ]
+        }
+    ],
+    "globalUploadSettings": {
+        "format": "CSV",
+        "delimiter": ",",
+        "textqualifier": "'",
+        "containsHeader": "true"
+    }
+}
+                            

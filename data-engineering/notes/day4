@@ -1,0 +1,129 @@
+Day 3
+
+
+
+Node 1 - 8 GB RAM, 160 GB HDD, 2 core CPU
+...
+Node 2 - 128 GB RAM, 2 TB HDD, 32 Cores CPU
+
+	Yarn to start 
+		Application Manager
+			allocate memory, cpu...
+			receive the program/application
+			run the application
+
+.....
+Node 1000
+
+
+
+Application 1
+	16 GB RAM
+	8 core CPUS
+	320 GB HDD
+	
+	Time factor: 2 hours
+	
+Application 3
+	24 GB RAM
+	8 core CPUS
+	600 GB HDD
+	
+	Time factor: 6 hours
+	
+
+Application 3
+	48 GB RAM
+	8 core CPUS
+	600 GB HDD
+	
+	Time factor: 6 hours
+	
+	
+	
+Application  4
+	24 GB RAM
+	8 core CPUS
+	600 GB HDD
+	
+	Time factor: 6 hours
+	
+-- 128 GB over - node 2 is filled
+
+
+	
+	
+Application 6
+	24 GB RAM
+	8 core CPUS
+	600 GB HDD
+	
+	Time factor: 6 hours, wait
+	
+	
+Application 2
+	2 GB RAM
+	1 Core CPU
+	1 GB HDD
+	
+	
+	
+Intel CPU - 
+
+4 Core CPU
+	Hyperthreading, split the core into 2 logical core
+	
+Physical CPU SPeed 1 core -  2 GHZ	
+				vcore 1 - 1 GHZ
+				vcore 2 - 1 GHZ
+				
+				
+--
+
+Submit the application
+
+get application id 
+
+status command use application id
+
+
+	submitted
+	running
+	completed
+	
+	
+Data - 1 TB - HDD
+
+Do I need 1 TB RAM Or Not...
+
+
+CSV file
+
+invoice id, amount, datetime, country...
+
+31232132132, 1000.00, 2020-12-26T10:30:33, USA
+
+
+Unstructure/Semi structured data
+id,          amout, dt, country 
+31232132132, 1000.00, 2020-12-26T10:30:33, USA = 46 char x 2 bytes = 96 bytes
+
+
+Structured 
+
+id - long - 8 bytes
+amount - double - 8 bytes
+datetime - long - 8 bytes 
+country  - string variable - 6 bytes 
+
+
+Un-Structured data ==> Structured
+96 bytes           ==> 8 + 8 + 8 + 6 = 30 bytes 
+
+
+1 TB --> Filter -> 100 GB -> Agg --> 100 MB --> Report
+
+HDFS 
+64 MB/128 MB Block
+64 MB/128 MB Block
+
